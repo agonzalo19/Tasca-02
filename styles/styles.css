@@ -4,20 +4,14 @@
 /* Primer contenidor */
 .container1{
 	background-color: black;
-	width: auto;
-    margin:10px;
-    padding: 10px;
-	display: flex;
-	flex-direction:column;
-	justify-content: space-around;
-	align-items: center;
+	padding: 10px;
 }
 
 .container11{
 	background-color: darkslateblue;
 	margin: 10px 10px;
-    width: 95%;
-    padding: 10px;
+	flex: 100;
+	padding: 10px;
 	display:flex;
 	flex-direction: row;
 	justify-content:space-around;
@@ -25,34 +19,33 @@
 }
 
 .container111{
+	flex: 20;
 	background-color:crimson;
-    display: flex;
-    margin: 10px 10px;
-    padding:10px;
-	width:15%;
+	display: flex;
+	margin: 10px 10px;
+	padding:10px;
 }
 
 .container112{
 	background-color:crimson;
-    display: flex;
-    margin: 10px 10px;
-    padding:10px;
-	width:65%;
+	display: flex;
+	flex: 60;
+	margin: 10px 10px;
+	padding:10px;
 }
 
 .container113{
     display: flex;
+    flex: 20;
     background-color:crimson;
-    margin: 10px 10px;
+    margin: 10px;
     padding:10px;
-	width:15%;
 }
 
 .container12{
 	background-color: orange;
-	margin: 10px 10px;
-    margin-bottom: 10px;
-    width: 95%;
+    flex:100;
+    margin:10px;
     padding: 10px;
 	display:flex;
 	flex-direction: row;
@@ -62,142 +55,134 @@
 
 .container121{
 	background-color:crimson;
-    margin: 10px 10px;
+    margin: 10px;
     padding:10px;
-	width:95%;
+	flex: 100;
 	display: flex;
 }
+
 
 /* Segon contenidor */
 .container2{
     background-color: black;
-	width: auto;
-    margin:10px;
+	flex: 100;
+	margin: 10px 0;
     padding: 10px;
 	display: flex;
 	flex-direction:row;
-	justify-content: space-around;
-	align-items: center;
 }
 
 .container21{ 
     background-color: darkblue;
-	margin: 10px 10px;
-    margin-right: 5px;
-    width: 65%;
+	margin: 10px;
+    flex-flow: row wrap;
     padding: 10px;
 	display:flex;
-	flex-direction: row;
-	justify-content:space-around;
-    flex-wrap: wrap;
+	flex:65;
 	align-items: center;
 }
 
 .container211{
 	background-color:skyblue;
     padding:10px;
-	width:42%;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-	display: flex;
+	margin:10px;
+	flex-basis:270px;
+	flex-grow: 1;
+	display:flex;
 }
 .container212{
 	background-color:skyblue;
     padding:10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-	width:42%;
-	display: flex;
+    margin:10px;
+	flex-basis:270px;
+	flex-grow: 1;
+	display:flex;
 }
 
 .container213{
 	background-color:skyblue;
     padding:10px;
-	width:42%;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-	display: flex;
+	margin:10px;
+	display:flex;
+	flex-basis:200px;
+	flex-grow: 1;
 }
 .container214{
 	background-color:skyblue;
     padding:10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-	width:42%;
+    margin:10px;
 	display: flex;
+	flex-basis:200px;
+	flex-grow: 1;
 }
 
 .container215{
 	background-color:cadetblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:10px;
     padding:10px;
-	width:91%;
+	flex:100%;
 	display: flex;
 }
 
 
 .container22{
     background-color: crimson;
-	margin: 10px 10px;
-    width:30%;
+	margin: 10px;
+    flex:30;
     padding: 10px;
 	display:flex;
-	flex-direction: row;
-	justify-content:space-around;
-    flex-wrap: wrap;
-	align-items: center;
+	flex-flow: row wrap;
+	align-content: flex-start;
 }
 
 .container221{
     display: flex;
-    background-color:orange;
-    margin: 10px 10px;
+    background-color: orange;
+    margin: 10px;
     padding:10px;
-	width:90%;
+	flex:100%;
 }
 
 .container222{
     display: flex;
     background-color:orange;
-    margin: 10px 10px;
+    margin: 10px;
     padding:10px;
-	width:90%;
-    margin-bottom: 35px;
+	flex:90;
 }
 
 /* Tercer contenidor */
 .container3{
 	background-color: black;
     padding: 10px;
-	width: auto;
-    margin:10px;
-	display: flex;
-	flex-direction:column;
-	justify-content: space-around;
-	align-items: center;
 }
 .container31{
     background-color: crimson;
-	margin: 10px 10px;
-    width:95%;
+	margin: 10px;
+    flex:100;
     padding: 10px;
 	display:flex;
-	flex-direction: row;
-	justify-content:space-around;
-    flex-wrap: wrap;
-	align-items: center;
 }
 
 /* Adabtació Tablet */
+@media (max-width:1020px){
+	.container212{
+		flex-basis: 180px;
+	}
+	
+	.container211{
+		flex-basis:180px;
+	}
+	
+	.container213{
+		flex-basis: 180px;
+	}
+	
+	.container214{
+		flex-basis:180px;
+	}
+	
+}
 @media (max-width:800px){
 	.container2{
 		background-color: yellow;
@@ -205,53 +190,51 @@
 	}
 	
 	.container21{
-		width: 95%;
+		flex:100;
 	}
 	
 	.container22{
-		width: 95%;
+		flex:100;
 		margin-bottom: 10px;
 	}
 	
 	.container222{
-		padding-bottom: 10px 10px;
+		padding-bottom: 10px;
 		margin: 10px;
 	}
 	
 }
 /* Adabtació Mobile */
-@media (max-width:600px){
-	.container214{
-		flex-wrap: nowrap;
-	}.container214{
-		flex-wrap: nowrap;
-	}
-	.container215{
-		flex-wrap: wrap;
-	}
-	.container21{
-		margin: 10px;
-	}
+@media (max-width:518px){
+	
 	.container211{
-		width: 45%;
-		padding-left: 0px;
-   	 	padding-right: 0px;
-		
+		flex:110px;
 	}
 	.container212{
-		 width: 45%;
-		 padding-left: 0px;
-   		 padding-right: 0px;
+		flex:110px;
 	}
 	.container213{
-		width: 45%;
-		 padding-left: 0px;
-   		 padding-right: 0px;
-		
+		flex:110px;
 	}
 	.container214{
-		width: 45%;
-		 padding-left: 0px;
-   		 padding-right: 0px;
+		flex:110px;
 	}
+	
+}
+
+@media (max-width:379px){
+	
+	.container211{
+		flex:70px;
+	}
+	.container212{
+		flex:70px;
+	}
+	.container213{
+		flex:70px;
+	}
+	.container214{
+		flex:70px;
+	}
+	
 }
