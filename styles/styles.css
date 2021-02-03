@@ -8,7 +8,7 @@
 }
 
 .container11{
-	background-color: darkslateblue;
+	background-color:rgba(0,0,0,0.38);
 	margin: 10px 10px;
 	flex: 100;
 	padding: 10px;
@@ -43,7 +43,7 @@
 }
 
 .container12{
-	background-color: orange;
+	background-color:rgba(0,0,0,0.38);
     flex:100;
     margin:10px;
     padding: 10px;
@@ -205,7 +205,7 @@
 	
 }
 /* Adabtació Mobile */
-@media (max-width:518px){
+@media (max-width:576px){
 	
 	.container211{
 		flex:110px;
