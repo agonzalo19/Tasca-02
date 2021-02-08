@@ -191,26 +191,35 @@
 
 /* Adabtació XS */
 @media (max-width:575px){
-	.flex-container-1{
-		width:445px
-	}
-	.flex-container-2{
-		width:445px
-	}
-	.flex-container-3{
-		width:445px
-	}
-}
 
-@media (max-width:445px){
-	.flex-container-1{
-		width:auto
+	.container11{
+	    margin: 10px;
+		flex:100%;
+		padding: 10px;
+		display:flex;
 	}
-	.flex-container-2{
-		width:auto
+	.container111{
+		margin: 10px;
+		flex:100%;
+		padding: 10px;
+		display:flex;
+		flex-flow: row wrap;
+		align-content: flex-start;
 	}
-	.flex-container-3{
-		width:auto
+	.container112{
+		margin: 10px;
+		flex:100%;
+		padding: 10px;
+		display:flex;
+		flex-flow: row wrap;
+		align-content: flex-start;
+	}
+	.container113{
+		margin: 10px;
+		flex:100%;
+		padding: 10px;
+		display:flex;
+
 	}
 }
 
